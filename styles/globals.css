@@ -82,6 +82,58 @@
   margin: 0;
 }
 
+p {
+  color: maroon;
+  line-height: 30px;
+}
+
+/* h1,h2,h3,h4,h5,h6 */
+.header-class {
+  color: black;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+section {
+  padding-top: 150px;
+}
+
+footer {
+  padding-bottom: 10px;
+  padding-top: 60px;
+  border-top: 1px solid black;
+}
+
+.primary_button {
+  background: grey !important;
+  padding: 7px 25px !important;
+  border: 1px solid darkcyan !important;
+}
+
+.primary_button a {
+  text-decoration: none;
+  color: cadetblue;
+  background: transparent !important;
+}
+
+.secondary_button {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 7px 25px !important;
+}
+
+.secondary_button a {
+  color: cadetblue !important;
+}
+
+.primary_button a:hover,
+.secondary_button a:hover {
+  color: unset;
+}
+
 html,
 body {
   max-width: 100vw;

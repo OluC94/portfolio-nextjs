@@ -83,7 +83,7 @@
 }
 
 p {
-  color: maroon;
+  color: navy;
   line-height: 30px;
 }
 
@@ -93,7 +93,7 @@ p {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.5rem !important;
 }
 
 footer {
@@ -102,18 +102,21 @@ footer {
   border-top: 1px solid black;
 }
 
+/* instead of section */
 .region {
-  padding-top: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .primary_button {
-  background: grey !important;
+  background: rgb(104, 156, 246) !important;
   padding: 7px 25px !important;
-  border: 1px solid darkcyan !important;
+  border: 1px solid black !important;
+  border-radius: 15px;
 }
 
 .primary_button a {
   text-decoration: none;
-  color: cadetblue;
+  color: navy;
   background: transparent !important;
 }
 
@@ -125,12 +128,12 @@ footer {
 }
 
 .secondary_button a {
-  color: cadetblue !important;
+  color: navy !important;
 }
 
 .primary_button a:hover,
 .secondary_button a:hover {
-  color: unset;
+  color: maroon;
 }
 
 html,

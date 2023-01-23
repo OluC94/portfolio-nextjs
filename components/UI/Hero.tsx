@@ -30,7 +30,38 @@ const Hero = () => {
                 </section>
               </section>
             </Col>
-            <Col lg="6" md="6"></Col>
+            <Col lg="6" md="6">
+              <section className={`${classes.hero_skills}`}>
+                <h6>Skills</h6>
+                <span>
+                  <i className="ri-bar-chart-horizontal-line"></i>
+                </span>
+                <span>
+                  <i className="ri-bar-chart-horizontal-line"></i>
+                </span>
+                <span>
+                  <i className="ri-bar-chart-horizontal-line"></i>
+                </span>
+                <span>
+                  <i className="ri-bar-chart-horizontal-line"></i>
+                </span>
+                <span>
+                  <i className="ri-bar-chart-horizontal-line"></i>
+                </span>
+                <span>
+                  <i className="ri-bar-chart-horizontal-line"></i>
+                </span>
+              </section>
+
+              <section
+                className={`${classes.hero_experience} d-flex align-items-center gap-3`}
+              >
+                <span>
+                  <i className="ri-time-line"></i>
+                </span>
+                <h6>Experience</h6>
+              </section>
+            </Col>
           </Row>
         </Container>
       </section>

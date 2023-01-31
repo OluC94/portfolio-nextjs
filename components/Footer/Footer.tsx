@@ -18,7 +18,7 @@ const navLink: NavItem[] = [
     display: "About Me",
   },
   {
-    path: "#portfoflio",
+    path: "#portfolio",
     display: "Portfolio",
   },
   {

@@ -1,10 +1,9 @@
 const portfolio = [
   {
     id: "01",
-    title: "Transportation Mobile App",
-    img: "/images/portfolio-01.jpg",
-    category: "Mobile App",
-    keyword: ["Mobile", "App", "UI-UX"],
+    title: "NC Games",
+    category: "Web App",
+    keyword: ["Full-stack", "Web App", "UI-UX"],
     liveUrl: "#",
   },
 

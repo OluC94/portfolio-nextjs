@@ -6,7 +6,7 @@ import ServiceItem from "./ServiceItem";
 
 const AboutMe = () => {
   return (
-    <section className="region" id="about_me">
+    <section className="region" id="about">
       <Container>
         <Row>
           <Col lg="6" md="6">

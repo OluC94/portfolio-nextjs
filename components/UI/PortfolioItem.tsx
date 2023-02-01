@@ -2,15 +2,25 @@ import React from "react";
 import classes from "@/styles/portfolioItem.module.css";
 import Link from "next/link";
 
-interface PortfolioItemProps {
+interface PortfolioData {
+  id: string;
   title: string;
-  repoURL: string;
-  liveURL: string;
-  keyword?: string[] | undefined;
+  category: string;
+  summary: string;
+  techStack: string[];
+  keyword: string[];
+  liveUrl: string;
+  feRepoUrl: string;
+  beRepoUrl: string;
 }
 
-const PortfolioItem = (props: PortfolioItemProps) => {
-  const { title, repoURL, liveURL, keyword } = props;
+interface Props {
+  item: {}; // props: Props, where Props is item object w/ type PortfolioData
+}
+
+const PortfolioItem = (props: PortfolioData) => {
+  const { title, feRepoUrl, liveUrl, keyword } = props.item;
+
   return (
     <section className={`${classes.portfolio_item}`}>
       <section>
@@ -26,13 +36,13 @@ const PortfolioItem = (props: PortfolioItemProps) => {
 
       <section className={`${classes.portfolio_repoUrl}`}>
         <button className="primary_button">
-          <Link href={liveURL}>Launch</Link>
+          <Link href={liveUrl}>Launch</Link>
         </button>
       </section>
 
       <section className={`${classes.portfolio_repoUrl}`}>
         <button className="primary_button">
-          <Link href={repoURL}>Github Repo</Link>
+          <Link href={feRepoUrl}>Github Repo</Link>
         </button>
       </section>
     </section>

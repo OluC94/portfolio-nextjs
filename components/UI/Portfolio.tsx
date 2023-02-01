@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import SectionSubtitle from "./SectionSubtitle";
 import classes from "@/styles/portfolio.module.css";
+import PortfolioItem from "./PortfolioItem";
+import portfolioData from "../data/portfolio";
 
 const Portfolio = () => {
   return (
@@ -25,6 +27,14 @@ const Portfolio = () => {
               </button>
             </section>
           </Col>
+
+          {portfolioData.map((item) => {
+            return (
+              <Col lg="4" md="4" key={item.id}>
+                <PortfolioItem item={item} />
+              </Col>
+            );
+          })}
         </Row>
       </Container>
     </section>

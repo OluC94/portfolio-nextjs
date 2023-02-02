@@ -15,35 +15,66 @@ interface PortfolioData {
 }
 
 interface Props {
-  item: {}; // props: Props, where Props is item object w/ type PortfolioData
+  item: PortfolioData;
 }
 
-const PortfolioItem = (props: PortfolioData) => {
-  const { title, feRepoUrl, liveUrl, keyword } = props.item;
+const PortfolioItem = (props: Props) => {
+  const { title, feRepoUrl, beRepoUrl, liveUrl, keyword, summary, techStack } =
+    props.item;
 
   return (
     <section className={`${classes.portfolio_item}`}>
-      <section>
+      <section className="bg-transparent">
         <h6>{title}</h6>
-        {keyword.map((item: string, index: number) => {
+        {/* {keyword.map((item: string, index: number) => {
           return (
             <span className={`${classes.portfolio_keyword}`} key={index}>
               {item}
             </span>
           );
-        })}
+        })} */}
+
+        <section className={`${classes.portfolio_summary}`}>{summary}</section>
+
+        <section className={`${classes.portfolio_techStack_container}`}>
+          {techStack.map((item: string, index: number) => {
+            return (
+              <span className={`${classes.portfolio_techStack}`} key={index}>
+                {item}
+              </span>
+            );
+          })}
+        </section>
       </section>
 
-      <section className={`${classes.portfolio_repoUrl}`}>
-        <button className="primary_button">
-          <Link href={liveUrl}>Launch</Link>
-        </button>
-      </section>
+      <section className={`${classes.portfolio_link_container}`}>
+        <section className={`${classes.portfolio_link}`}>
+          <button className="primary_button">
+            <Link href={liveUrl} target="_blank">
+              Launch
+            </Link>
+          </button>
+        </section>
 
-      <section className={`${classes.portfolio_repoUrl}`}>
-        <button className="primary_button">
-          <Link href={feRepoUrl}>Github Repo</Link>
-        </button>
+        {feRepoUrl.length > 0 ? (
+          <section className={`${classes.portfolio_link}`}>
+            <button className="primary_button">
+              <Link href={feRepoUrl} target="_blank">
+                {beRepoUrl.length > 0 ? "Front End Repo" : "Github Repo"}
+              </Link>
+            </button>
+          </section>
+        ) : null}
+
+        {beRepoUrl.length > 0 ? (
+          <section className={`${classes.portfolio_link}`}>
+            <button className="primary_button">
+              <Link href={beRepoUrl} target="_blank">
+                {feRepoUrl.length > 0 ? "Back End Repo" : "Github Repo"}
+              </Link>
+            </button>
+          </section>
+        ) : null}
       </section>
     </section>
   );

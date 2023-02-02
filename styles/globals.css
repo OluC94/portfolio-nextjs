@@ -109,10 +109,10 @@ footer {
   padding-bottom: 50px;
 }
 .primary_button {
-  background: rgb(104, 156, 246) !important;
+  background: rgb(104, 182, 246) !important;
   padding: 7px 25px !important;
   border: 1px solid black !important;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .primary_button a {

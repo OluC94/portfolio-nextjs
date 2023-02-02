@@ -10,7 +10,7 @@ const Portfolio = () => {
     <section className="region" id="portfolio">
       <Container>
         <Row>
-          <Col lg="6" md="6">
+          <Col lg="6" md="6" className="mb-5">
             <SectionSubtitle subtitle="My Portfolio" />
             <h4 className="mt-4">My portfolio</h4>
           </Col>

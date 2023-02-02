@@ -1,0 +1,54 @@
+.portfolio_item {
+  background: rgb(0, 58, 128);
+  padding: 0px 20px 20px 20px;
+  padding-top: 30px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.portfolio_item h6 {
+  color: lightblue;
+  margin-bottom: 10px;
+  background: transparent;
+}
+
+.portfolio_techStack_container {
+  margin: 5px;
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio_techStack {
+  width: max-content;
+  padding: 5px 10px;
+  color: lightblue;
+  background: #808dad68;
+  font-size: 0.7rem;
+  margin-right: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.portfolio_link_container {
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio_link {
+  background: transparent;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+.portfolio_link:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio_summary {
+  color: lightblue;
+  background: transparent;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}

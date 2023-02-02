@@ -15,7 +15,8 @@ const portfolioData: PortfolioData[] = [
     id: "01",
     title: "NC Games",
     category: "Web App",
-    summary: "",
+    summary:
+      "A Full Stack web application resembling a game review site created during the Northcoders Coding Bootcamp",
     techStack: [
       "JavaScript",
       "HTML",
@@ -26,7 +27,7 @@ const portfolioData: PortfolioData[] = [
       "Express",
       "Axios",
     ],
-    keyword: ["Full-stack", "Web App", "RESTful"],
+    keyword: ["Full stack", "Web App", "RESTful"],
     liveUrl: "https://oluc94-nc-games.netlify.app/",
     feRepoUrl: "https://github.com/OluC94/fe-nc-games",
     beRepoUrl: "https://github.com/OluC94/be-project-nc-games",
@@ -34,10 +35,19 @@ const portfolioData: PortfolioData[] = [
 
   {
     id: "02",
-    title: "Real Impact",
+    title: "Reel Impact",
     category: "Web App",
-    summary: "",
-    techStack: ["JavaScript", "HTML", "CSS", "React", "Node", "Axios"],
+    summary:
+      "A front-end movie trivia game that tests knowledge of actors and their appearances",
+    techStack: [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "React",
+      "Node",
+      "Axios",
+      "RapidAPI",
+    ],
     keyword: ["Front-end", "Web App", "UI-UX"],
     liveUrl: "https://reel-impact.netlify.app/",
     feRepoUrl: "https://github.com/OluC94/movie-game-react/",

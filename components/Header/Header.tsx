@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { useRef, useEffect } from "react";
 import { Container } from "reactstrap";
 import classes from "./header.module.css";
 import Link from "next/link";
@@ -28,6 +28,27 @@ const navLink: NavItem[] = [
 ];
 
 const Header = () => {
+  // const headerRef = useRef(null);
+
+  // const headerFunc = () => {
+  //   if (
+  //     document.body.scrollTop > 80 ||
+  //     document.documentElement.scrollTop > 80
+  //   ) {
+  //     headerRef.current.classList.add(`${classes.header_shrink}`);
+  //   } else {
+  //     headerRef.current.classList.remove(`${classes.header_shrink}`);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   window.addEventListener("scroll", headerFunc);
+
+  //   return () => window.removeEventListener("scroll", headerFunc);
+  // }, []);
+
+  // add ref={headerRef} to header comp
+
   return (
     <header className={`${classes.header}`}>
       <Container>

@@ -11,7 +11,7 @@ const Portfolio = () => {
       <Container>
         <Row>
           <Col lg="6" md="6" className="mb-5">
-            <SectionSubtitle subtitle="My Portfolio" />
+            <SectionSubtitle subtitle="My portfolio" />
             <h4 className="mt-4">My portfolio</h4>
           </Col>
 

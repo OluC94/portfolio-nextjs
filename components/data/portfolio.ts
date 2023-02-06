@@ -53,6 +53,18 @@ const portfolioData: PortfolioData[] = [
     feRepoUrl: "https://github.com/OluC94/movie-game-react/",
     beRepoUrl: "",
   },
+  {
+    id: "03",
+    title: "My Portfolio Website",
+    category: "Web App",
+    summary:
+      "The site you're on right now! A mobile-first responsive web page BLAH BLAH BLAH",
+    techStack: ["TypeScript", "HTML", "CSS", "NextJs"],
+    keyword: ["Front-end", "Web App", "UI-UX"],
+    liveUrl: "",
+    feRepoUrl: "",
+    beRepoUrl: "",
+  },
 ];
 
 export default portfolioData;

@@ -3,6 +3,7 @@ import Hello from "@/components/UI/Hello";
 import AboutMe from "@/components/UI/AboutMe";
 import { Fragment } from "react";
 import Portfolio from "@/components/UI/Portfolio";
+import Contact from "@/components/UI/Contact";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,6 +13,7 @@ export default function Home() {
       <Hello />
       <AboutMe />
       <Portfolio />
+      <Contact />
     </Fragment>
   );
 }

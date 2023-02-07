@@ -62,7 +62,7 @@ const portfolioData: PortfolioData[] = [
     techStack: ["TypeScript", "HTML", "CSS", "NextJs"],
     keyword: ["Front-end", "Web App", "UI-UX"],
     liveUrl: "",
-    feRepoUrl: "",
+    feRepoUrl: "https://github.com/OluC94/portfolio-nextjs",
     beRepoUrl: "",
   },
 ];

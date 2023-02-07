@@ -48,13 +48,15 @@ const PortfolioItem = (props: Props) => {
       </section>
 
       <section className={`${classes.portfolio_link_container}`}>
-        <section className={`${classes.portfolio_link}`}>
-          <button className="primary_button">
-            <Link href={liveUrl} target="_blank">
-              Launch
-            </Link>
-          </button>
-        </section>
+        {liveUrl.length > 0 ? (
+          <section className={`${classes.portfolio_link}`}>
+            <button className="primary_button">
+              <Link href={liveUrl} target="_blank">
+                Launch
+              </Link>
+            </button>
+          </section>
+        ) : null}
 
         {feRepoUrl.length > 0 ? (
           <section className={`${classes.portfolio_link}`}>

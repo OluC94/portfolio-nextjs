@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState, MutableRefObject } from "react";
 import { Container } from "reactstrap";
 import classes from "./header.module.css";
 import Link from "next/link";
@@ -28,7 +28,31 @@ const navLink: NavItem[] = [
 ];
 
 const Header = () => {
-  // const headerRef = useRef(null);
+  const [sticky, setSticky] = useState({ isSticky: false, offset: 0 });
+  const headerRef = useRef<HTMLDivElement | null>(null);
+
+  const handleScroll = (elTopOffset: number, elHeight: number) => {
+    if (!headerRef.current) return null;
+    if (window.scrollY > elTopOffset + elHeight) {
+      setSticky({ isSticky: true, offset: elHeight });
+    } else {
+      setSticky({ isSticky: false, offset: 0 });
+    }
+  };
+
+  useEffect(() => {
+    const header: DOMRect | undefined =
+      headerRef.current.getBoundingClientRect();
+    const handleScrollEvent = () => {
+      handleScroll(header.top, header.height);
+    };
+
+    window.addEventListener("scroll", handleScrollEvent);
+
+    return () => {
+      window.removeEventListener("scroll", handleScrollEvent);
+    };
+  }, []);
 
   // const headerFunc = () => {
   //   if (
@@ -50,7 +74,7 @@ const Header = () => {
   // add ref={headerRef} to header comp
 
   return (
-    <header className={`${classes.header}`}>
+    <header className={`${classes.header}`} ref={headerRef}>
       <Container>
         <section className={`${classes.nav_wrapper}`}>
           <section className={`${classes.logo}`}>

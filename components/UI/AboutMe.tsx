@@ -19,7 +19,7 @@ const AboutMe = () => {
             </section>
           </Col>
 
-          <Col lg="6" md="6">
+          <Col lg="6" md="6" className={classes.aboutMe_title}>
             <SectionSubtitle subtitle="What I do/Interests/Whatever" />
             <h3>Stuff</h3>
             <h3>Stuff</h3>

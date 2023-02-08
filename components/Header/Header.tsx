@@ -28,38 +28,20 @@ const navLink: NavItem[] = [
 ];
 
 const Header = () => {
-  const [sticky, setSticky] = useState({ isSticky: false, offset: 0 });
-  const headerRef = useRef<HTMLDivElement | null>(null);
+  const menuRef = useRef<HTMLElement>(null);
 
-  const handleScroll = (elTopOffset: number, elHeight: number) => {
-    if (!headerRef.current) return null;
-    if (window.scrollY > elTopOffset + elHeight) {
-      setSticky({ isSticky: true, offset: elHeight });
-    } else {
-      setSticky({ isSticky: false, offset: 0 });
-    }
-  };
+  const toggleMenu = () =>
+    menuRef.current.classList.toggle(`${classes.menu_active}`);
 
-  useEffect(() => {
-    const header: DOMRect | undefined =
-      headerRef.current.getBoundingClientRect();
-    const handleScrollEvent = () => {
-      handleScroll(header.top, header.height);
-    };
-
-    window.addEventListener("scroll", handleScrollEvent);
-
-    return () => {
-      window.removeEventListener("scroll", handleScrollEvent);
-    };
-  }, []);
+  //   const headerRef = useRef(null);
 
   // const headerFunc = () => {
   //   if (
-  //     document.body.scrollTop > 80 ||
-  //     document.documentElement.scrollTop > 80
+  //     document.body.scrollTop > 600 ||
+  //     document.documentElement.scrollTop > 600
   //   ) {
   //     headerRef.current.classList.add(`${classes.header_shrink}`);
+  //     // console.log(window.scrollY);
   //   } else {
   //     headerRef.current.classList.remove(`${classes.header_shrink}`);
   //   }
@@ -71,11 +53,11 @@ const Header = () => {
   //   return () => window.removeEventListener("scroll", headerFunc);
   // }, []);
 
-  // add ref={headerRef} to header comp
+  // console.log(window.scrollY);
 
   return (
-    <header className={`${classes.header}`} ref={headerRef}>
-      <Container>
+    <header className={`${classes.header}`}>
+      <Container className={`${classes.header_container}`}>
         <section className={`${classes.nav_wrapper}`}>
           <section className={`${classes.logo}`}>
             <h1>
@@ -83,7 +65,11 @@ const Header = () => {
             </h1>
           </section>
 
-          <section className={`${classes.navigation}`}>
+          <section
+            className={`${classes.navigation}`}
+            ref={menuRef}
+            onClick={toggleMenu}
+          >
             <section className={`${classes.nav_menu}`}>
               {navLink.map((item, index) => (
                 <Link href={item.path} key={index}>
@@ -93,11 +79,17 @@ const Header = () => {
 
               <section className={`${classes.nav_right}`}>
                 <p className=" d-flex align-items-center gap-2 mb-0">
-                  <i className="ri-github-line"></i>Site repo
+                  <Link href={"https://github.com/OluC94"} target="_blank">
+                    <i className="ri-github-line"></i>
+                  </Link>
                 </p>
               </section>
             </section>
           </section>
+
+          <span className={`${classes.mobile_menu}`}>
+            <i className="ri-menu-line" onClick={toggleMenu}></i>
+          </span>
         </section>
       </Container>
     </header>

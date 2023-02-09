@@ -100,7 +100,7 @@ h2 {
 footer {
   padding-bottom: 10px;
   padding-top: 60px;
-  border-top: 1px solid black;
+  /* border-top: 1px solid navy; */
 }
 
 /* instead of section */
@@ -184,5 +184,16 @@ a {
   .primary_button a,
   .secondary_button a {
     font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .region {
+    padding-top: 110px;
+  }
+
+  .footer {
+    padding-top: 0;
+    border: none;
   }
 }

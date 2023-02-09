@@ -1,3 +1,11 @@
 .tab_button_active {
   color: navy !important;
 }
+
+@media only screen and (max-width: 992px) {
+  .tab_button {
+    text-align: left !important;
+    margin-top: 20px !important;
+    margin-bottom: 30px;
+  }
+}

@@ -16,7 +16,7 @@ const Portfolio = () => {
           </Col>
 
           <Col lg="6" md="6">
-            <section className="text-end">
+            <section className={`${classes.tab_button} text-end`}>
               <button
                 className={`${classes.tab_button_active} secondary_button text-black`}
               >
@@ -28,9 +28,9 @@ const Portfolio = () => {
             </section>
           </Col>
 
-          {portfolioData.map((item) => {
+          {portfolioData?.map((item) => {
             return (
-              <Col lg="4" md="4" key={item.id}>
+              <Col lg="4" md="4" sm="6" key={item.id}>
                 <PortfolioItem item={item} />
               </Col>
             );

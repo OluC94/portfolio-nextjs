@@ -35,4 +35,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# personal
 notes.md
+/public/files/olu-coker-2023.pdf

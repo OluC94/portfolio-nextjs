@@ -35,7 +35,7 @@ const Footer = () => {
     <footer>
       <Container>
         <Row>
-          <Col lg="6">
+          <Col lg="6" className={`${classes.footer_top}`}>
             <section className={`${classes.nav_menu}`}>
               {navLink.map((item, index) => (
                 <Link href={item.path} key={index}>
@@ -45,7 +45,7 @@ const Footer = () => {
             </section>
           </Col>
 
-          <Col lg="6">
+          <Col lg="6" className={`${classes.footer_top}`}>
             <section className={`${classes.footer_creator}`}>
               <h6>Created by Olu Coker</h6>
             </section>

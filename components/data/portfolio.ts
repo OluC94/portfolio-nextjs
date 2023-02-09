@@ -58,7 +58,7 @@ const portfolioData: PortfolioData[] = [
     title: "My Portfolio Website",
     category: "Web App",
     summary:
-      "The site you're on right now! A mobile-first responsive web page BLAH BLAH BLAH",
+      "The site you're on right now! A responsive web written in TypeScript and Next.js",
     techStack: ["TypeScript", "HTML", "CSS", "NextJs"],
     keyword: ["Front-end", "Web App", "UI-UX"],
     liveUrl: "",

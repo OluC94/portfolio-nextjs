@@ -15,22 +15,20 @@ const Hero = () => {
               <section className={`${classes.hero_content}`}>
                 <SectionSubtitle subtitle="Hello" />
                 <h2 className="mt-3 mb-3">I'm Olu Coker</h2>
-                <h5 className="mb-4">Full Stack Developer</h5>
+                <h5 className="mb-4">Junior Full Stack Developer</h5>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Deserunt, odit nam?
+                  Intro About me, northcoders gradiate looing for junior dev
+                  roles
                 </p>
                 <section className="mt-5">
                   <button className="primary_button">
-                    <Link href="#">Hire me</Link>
+                    <Link href="olu-coker-2023.pdf" target="_blank" download>
+                      Download CV
+                    </Link>
                   </button>
                   <button className="secondary_button">
-                    <Link
-                      href="@/public/olu-coker-2023.pdf"
-                      target="_blank"
-                      download
-                    >
-                      Download CV
+                    <Link href="https://github.com/OluC94" target="_blank">
+                      <i className="ri-github-line"></i> My Github
                     </Link>
                   </button>
                 </section>

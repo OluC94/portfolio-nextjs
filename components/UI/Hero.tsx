@@ -36,25 +36,29 @@ const Hero = () => {
             </Col>
             <Col lg="6" md="6">
               <section className={`${classes.hero_skills}`}>
-                <h6>Skills</h6>
-                <span>
-                  <i className="ri-bar-chart-horizontal-line"></i>
-                </span>
-                <span>
-                  <i className="ri-bar-chart-horizontal-line"></i>
-                </span>
-                <span>
-                  <i className="ri-bar-chart-horizontal-line"></i>
-                </span>
-                <span>
-                  <i className="ri-bar-chart-horizontal-line"></i>
-                </span>
-                <span>
-                  <i className="ri-bar-chart-horizontal-line"></i>
-                </span>
-                <span>
-                  <i className="ri-bar-chart-horizontal-line"></i>
-                </span>
+                <Image
+                  className={`${classes.tech_logo}`}
+                  alt="React logo"
+                  src="/images/react.png"
+                  width="150"
+                  height="150"
+                />
+                <section>
+                  <Image
+                    className={`${classes.tech_logo}`}
+                    alt="NodeJS logo"
+                    src="/images/node3d.png"
+                    width="150"
+                    height="150"
+                  />
+                  <Image
+                    className={`${classes.tech_logo}`}
+                    alt="SQL logo"
+                    src="/images/sql-logo.png"
+                    width="200"
+                    height="200"
+                  />
+                </section>
               </section>
 
               {/* <section

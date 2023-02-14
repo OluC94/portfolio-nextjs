@@ -20,15 +20,19 @@ const AboutMe = () => {
           </Col>
 
           <Col lg="6" md="6" className={classes.aboutMe_title}>
-            <SectionSubtitle subtitle="What I do/Interests/Whatever" />
-            <h3>Stuff</h3>
-            <h3>Stuff</h3>
+            <SectionSubtitle subtitle="About Me" />
+            <br />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-              impedit nulla quos nam, excepturi quisquam quasi nisi corporis
-              quae quas voluptate, nobis, iure sint amet maxime laboriosam
-              beatae mollitia sed! Libero ullam veritatis sunt qui temporibus
-              repellat laboriosam nobis vero.
+              I graduated from the Northcoders Coding Bootcamp, where I got to
+              spend a lot of time with JavaScript, HTML and CSS.
+            </p>
+            <p>
+              Currently specialising in Full Stack Development, I am looking
+              forward to learning new languages and technologies.
+            </p>
+            <p>
+              You can find my completed projects in the section below, with more
+              on the way soon.
             </p>
           </Col>
         </Row>

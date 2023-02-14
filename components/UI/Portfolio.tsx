@@ -11,20 +11,20 @@ const Portfolio = () => {
       <Container>
         <Row>
           <Col lg="6" md="6" className="mb-5">
-            <SectionSubtitle subtitle="My portfolio" />
-            <h4 className="mt-4">My portfolio</h4>
+            <SectionSubtitle subtitle="Portfolio" />
+            <h4 className="mt-4">My personal projects</h4>
           </Col>
 
           <Col lg="6" md="6">
             <section className={`${classes.tab_button} text-end`}>
-              <button
+              {/* <button
                 className={`${classes.tab_button_active} secondary_button text-black`}
               >
                 NC Games
               </button>
               <button className={`secondary_button text-black`}>
                 Reel Impact
-              </button>
+              </button> */}
             </section>
           </Col>
 

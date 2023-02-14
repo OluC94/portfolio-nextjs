@@ -87,13 +87,12 @@ p {
   line-height: 30px;
 }
 
-/* h1,h2,h3,h4,h5,h6 */
 .header-class {
   color: black;
 }
 
 h2 {
-  color: navy;
+  /* color: navy; */
   font-size: 2rem !important;
 }
 
@@ -105,8 +104,8 @@ footer {
 
 /* instead of section */
 .region {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 65px;
+  padding-bottom: 35px;
 }
 .primary_button {
   background: rgb(104, 182, 246) !important;

@@ -26,13 +26,6 @@ const PortfolioItem = (props: Props) => {
     <section className={`${classes.portfolio_item}`}>
       <section className="bg-transparent">
         <h6>{title}</h6>
-        {/* {keyword.map((item: string, index: number) => {
-          return (
-            <span className={`${classes.portfolio_keyword}`} key={index}>
-              {item}
-            </span>
-          );
-        })} */}
 
         <section className={`${classes.portfolio_summary}`}>{summary}</section>
 

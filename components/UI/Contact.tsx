@@ -13,14 +13,16 @@ const Contact = () => {
           <Col lg="6" md="6">
             <SectionSubtitle subtitle="Contact" />
             <h3>Contact me</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex nemo
-              dignissimos earum, libero tempora sapiente in autem corporis
-              quisquam, ea eum deleniti qui, porro nobis quas fugiat est quos
-              asperiores. Voluptates maxime commodi saepe qui eligendi
-              necessitatibus dolorum omnis? Itaque.
-            </p>
+            <p>Feel free to connect with me on LinkedIn.</p>
+            <p>You can also find my personal contact details on my CV</p>
+            <button className="primary_button">
+              <Link href="olu-coker-2023.pdf" target="_blank" download>
+                Download CV
+              </Link>
+            </button>
+          </Col>
 
+          <Col lg="6" md="6">
             <section className={`${classes.contact_info_list}`}>
               <Link
                 href="https://www.linkedin.com/in/oluwole-coker-921697144/"
@@ -42,10 +44,7 @@ const Contact = () => {
                 </section>
               </Link>
             </section>
-          </Col>
-
-          <Col lg="6" md="6">
-            <Form />
+            {/* <Form /> */}
           </Col>
         </Row>
       </Container>

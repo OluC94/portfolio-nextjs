@@ -30,12 +30,12 @@ const navLink: NavItem[] = [
 const Header = () => {
   const menuRef = useRef<HTMLSelectElement>(null);
 
-  const logoLeft: string = "<";
-  const logoRight: string = "/>";
+  const logoLeft: string = "</>";
+  // const logoRight: string = "/>";
 
   const toggleMenu = () => {
     if (!menuRef) return null;
-    return menuRef.current.classList.toggle(`${classes.menu_active}`);
+    return menuRef?.current?.classList.toggle(`${classes.menu_active}`);
   };
 
   //   const headerRef = useRef(null);
@@ -67,7 +67,7 @@ const Header = () => {
           <section className={`${classes.logo}`}>
             <h1>
               <span>{logoLeft}</span>
-              {logoRight}
+              {/* {logoRight} */}
             </h1>
           </section>
 

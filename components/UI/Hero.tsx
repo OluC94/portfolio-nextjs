@@ -13,12 +13,17 @@ const Hero = () => {
           <Row>
             <Col lg="6" md="6">
               <section className={`${classes.hero_content}`}>
-                <SectionSubtitle subtitle="Hello" />
+                <SectionSubtitle subtitle="Welcome" />
                 <h2 className="mt-3 mb-3">I'm Olu Coker</h2>
                 <h5 className="mb-4">Junior Full Stack Developer</h5>
                 <p>
-                  Intro About me, northcoders gradiate looing for junior dev
-                  roles
+                  I am a Junior Full Stack Developer looking for London-based
+                  remote or hybrid roles.
+                </p>
+                <p>
+                  With a development background in creating web applications, I
+                  am interested in learning as much about software development
+                  as possible.
                 </p>
                 <section className="mt-5">
                   <button className="primary_button">
@@ -36,25 +41,29 @@ const Hero = () => {
             </Col>
             <Col lg="6" md="6">
               <section className={`${classes.hero_skills}`}>
-                <h6>Skills</h6>
-                <span>
-                  <i className="ri-bar-chart-horizontal-line"></i>
-                </span>
-                <span>
-                  <i className="ri-bar-chart-horizontal-line"></i>
-                </span>
-                <span>
-                  <i className="ri-bar-chart-horizontal-line"></i>
-                </span>
-                <span>
-                  <i className="ri-bar-chart-horizontal-line"></i>
-                </span>
-                <span>
-                  <i className="ri-bar-chart-horizontal-line"></i>
-                </span>
-                <span>
-                  <i className="ri-bar-chart-horizontal-line"></i>
-                </span>
+                <Image
+                  className={`${classes.tech_logo}`}
+                  alt="React logo"
+                  src="/images/react.png"
+                  width="150"
+                  height="150"
+                />
+                <section>
+                  <Image
+                    className={`${classes.tech_logo}`}
+                    alt="NodeJS logo"
+                    src="/images/node3d.png"
+                    width="150"
+                    height="150"
+                  />
+                  <Image
+                    className={`${classes.tech_logo}`}
+                    alt="SQL logo"
+                    src="/images/sql-logo.png"
+                    width="200"
+                    height="200"
+                  />
+                </section>
               </section>
 
               {/* <section

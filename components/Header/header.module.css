@@ -3,7 +3,6 @@
   top: 0;
   width: 100%;
   height: 60px;
-  /* 80 */
   line-height: 80px;
   z-index: 9999;
   box-shadow: 5px 5px 15px -5px navy !important;
@@ -11,7 +10,6 @@
 
 .header_container {
   height: 40px;
-  /* 60 */
 }
 
 .nav_wrapper {
@@ -48,10 +46,6 @@
 .nav_menu a:hover {
   color: green;
 }
-
-/* .nav_menu a:first-child {
-  color: green;
-} */
 
 .nav_right p {
   color: navy;

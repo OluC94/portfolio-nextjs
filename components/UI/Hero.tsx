@@ -65,16 +65,6 @@ const Hero = () => {
                   />
                 </section>
               </section>
-
-              {/* <section
-                className={`${classes.hero_experience} d-flex align-items-center gap-3`}
-              >
-                <span>
-                  <i className="ri-time-line"></i>
-                </span>
-                <h5>Experience</h5>
-                <h6>Junior </h6>
-              </section> */}
             </Col>
           </Row>
         </Container>

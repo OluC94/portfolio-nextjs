@@ -92,17 +92,14 @@ p {
 }
 
 h2 {
-  /* color: navy; */
   font-size: 2rem !important;
 }
 
 footer {
   padding-bottom: 10px;
   padding-top: 60px;
-  /* border-top: 1px solid navy; */
 }
 
-/* instead of section */
 .region {
   padding-top: 65px;
   padding-bottom: 35px;
@@ -156,12 +153,6 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  /* background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
 }
 
 a {

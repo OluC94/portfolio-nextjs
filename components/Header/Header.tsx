@@ -30,35 +30,12 @@ const navLink: NavItem[] = [
 const Header = () => {
   const menuRef = useRef<HTMLSelectElement>(null);
 
-  const logoLeft: string = "</>";
-  // const logoRight: string = "/>";
+  const logo: string = "</>";
 
   const toggleMenu = () => {
     if (!menuRef) return null;
     return menuRef?.current?.classList.toggle(`${classes.menu_active}`);
   };
-
-  //   const headerRef = useRef(null);
-
-  // const headerFunc = () => {
-  //   if (
-  //     document.body.scrollTop > 600 ||
-  //     document.documentElement.scrollTop > 600
-  //   ) {
-  //     headerRef.current.classList.add(`${classes.header_shrink}`);
-  //     // console.log(window.scrollY);
-  //   } else {
-  //     headerRef.current.classList.remove(`${classes.header_shrink}`);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", headerFunc);
-
-  //   return () => window.removeEventListener("scroll", headerFunc);
-  // }, []);
-
-  // console.log(window.scrollY);
 
   return (
     <header className={`${classes.header}`}>
@@ -66,8 +43,7 @@ const Header = () => {
         <section className={`${classes.nav_wrapper}`}>
           <section className={`${classes.logo}`}>
             <h1>
-              <span>{logoLeft}</span>
-              {/* {logoRight} */}
+              <span>{logo}</span>
             </h1>
           </section>
 

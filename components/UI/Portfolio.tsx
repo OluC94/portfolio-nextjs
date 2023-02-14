@@ -16,16 +16,7 @@ const Portfolio = () => {
           </Col>
 
           <Col lg="6" md="6">
-            <section className={`${classes.tab_button} text-end`}>
-              {/* <button
-                className={`${classes.tab_button_active} secondary_button text-black`}
-              >
-                NC Games
-              </button>
-              <button className={`secondary_button text-black`}>
-                Reel Impact
-              </button> */}
-            </section>
+            <section className={`${classes.tab_button} text-end`}></section>
           </Col>
 
           {portfolioData?.map((item) => {

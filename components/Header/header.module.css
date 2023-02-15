@@ -131,4 +131,9 @@
     height: 60px;
     line-height: 60px;
   }
+
+  .mobile_menu i {
+    display: block !important;
+    margin-top: 15px;
+  }
 }

@@ -27,7 +27,7 @@ const Hero = () => {
                 </p>
                 <section className="mt-5">
                   <button className="primary_button">
-                    <Link href="olu-coker-2023.pdf" target="_blank" download>
+                    <Link href="olu-coker-cv.pdf" target="_blank">
                       Download CV
                     </Link>
                   </button>
@@ -60,7 +60,7 @@ const Hero = () => {
                     className={`${classes.tech_logo}`}
                     alt="SQL logo"
                     src="/images/sql-logo.png"
-                    width="200"
+                    width="250"
                     height="200"
                   />
                 </section>

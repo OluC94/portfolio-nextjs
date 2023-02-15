@@ -15,7 +15,7 @@ const Contact = () => {
             <p>Feel free to connect with me on LinkedIn.</p>
             <p>You can also find my personal contact details on my CV</p>
             <button className="primary_button">
-              <Link href="olu-coker-2023.pdf" target="_blank" download>
+              <Link href="olu-coker-cv.pdf" target="_blank" download>
                 Download CV
               </Link>
             </button>

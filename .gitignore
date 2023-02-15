@@ -37,4 +37,6 @@ next-env.d.ts
 
 # personal
 notes.md
-/public/olu-coker-2023.pdf
+/public/olu-coker-cv.pdf
+# Local Netlify folder
+.netlify

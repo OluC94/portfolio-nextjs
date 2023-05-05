@@ -56,7 +56,7 @@ const Hero = () => {
                     >
                       <Image
                         className={`${classes.tech_logo}`}
-                        alt="NodeJS logo"
+                        alt="Certified in cybersecurity badge"
                         src="/images/badge-cc.png"
                         width="150"
                         height="150"

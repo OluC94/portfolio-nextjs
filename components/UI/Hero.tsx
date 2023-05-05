@@ -17,8 +17,8 @@ const Hero = () => {
                 <h2 className="mt-3 mb-3">I&apos;m Olu Coker</h2>
                 <h5 className="mb-4">Junior Full Stack Developer</h5>
                 <p>
-                  I am a Junior Full Stack Developer looking for London-based
-                  remote or hybrid roles.
+                  I am a Junior Full Stack Developer looking for an exciting new
+                  role.
                 </p>
                 <p>
                   With a development background in creating web applications, I
@@ -49,13 +49,20 @@ const Hero = () => {
                   height="150"
                 />
                 <section>
-                  <Image
-                    className={`${classes.tech_logo}`}
-                    alt="NodeJS logo"
-                    src="/images/node3d.png"
-                    width="150"
-                    height="150"
-                  />
+                  <section>
+                    <Link
+                      href="https://www.credly.com/badges/1314bfd4-50aa-4d63-ba66-b364d7f47c30/public_url"
+                      target="_blank"
+                    >
+                      <Image
+                        className={`${classes.tech_logo}`}
+                        alt="NodeJS logo"
+                        src="/images/badge-cc.png"
+                        width="150"
+                        height="150"
+                      />
+                    </Link>
+                  </section>
                   <Image
                     className={`${classes.tech_logo}`}
                     alt="SQL logo"

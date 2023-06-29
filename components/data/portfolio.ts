@@ -65,6 +65,18 @@ const portfolioData: PortfolioData[] = [
     feRepoUrl: "https://github.com/OluC94/portfolio-nextjs",
     beRepoUrl: "",
   },
+  {
+    id: "04",
+    title: "Workout Routine API",
+    category: "Web App",
+    summary:
+      "A back-end application that allows the user to develop their own workout routines",
+    techStack: ["Python", "Django", "SQLite3"],
+    keyword: ["Back-end", "Web App", "RESTful"],
+    liveUrl: "https://oluc94.pythonanywhere.com/",
+    feRepoUrl: "",
+    beRepoUrl: "https://github.com/OluC94/workout-app-be-python",
+  },
 ];
 
 export default portfolioData;
